@@ -26,13 +26,15 @@ local evolved = {
         SOFTWARE.
     ]]
 }
-
 ---@class evolved.id
 
+---@generic T
+
 ---@alias evolved.entity evolved.id
----@alias evolved.fragment evolved.id
+---@alias evolved.fragment<T> evolved.id<T>
 ---@alias evolved.query evolved.id
 ---@alias evolved.system evolved.id
+---@alias evolved.tag evolved.id
 
 ---@alias evolved.component any
 ---@alias evolved.storage evolved.component[]
@@ -8325,6 +8327,7 @@ evolved.DESTRUCTION_POLICY_REMOVE_FRAGMENT = __DESTRUCTION_POLICY_REMOVE_FRAGMEN
 ---
 
 evolved.id = __evolved_id
+evolved.tag = __evolved_id
 evolved.name = __evolved_name
 
 evolved.pack = __evolved_pack
